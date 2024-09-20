@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="config.js" defer></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Bookmark landing page</title>
+    <!-- <link
+      rel="stylesheet"
+      href="styles.css"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="w-[80%] mx-auto py-4">
+      <!-- Header -->
+      <header>
+        <nav class="flex items-center justify-between py-2">
+          <div>
+            <img
+              src="./images/logo-bookmark.svg"
+              alt="Logo"
+              class="cursor-pointer"
+            />
+          </div>
+          <div class="md:hidden cursor-pointer">
+            <img src="./images/icon-hamburger.svg" alt="Menu" />
+          </div>
+          <ul class="space-x-2 hidden md:flex items-center">
+            <li class="py-1 px-2">
+              <a
+                href="#"
+                class="uppercase hover:text-primaryred font-medium text-neutraldarkblue text-xs"
+                >Features</a
+              >
+            </li>
+            <li class="py-1 px-2">
+              <a
+                href="#"
+                class="uppercase hover:text-primaryred font-medium text-neutraldarkblue text-xs"
+                >Pricing</a
+              >
+            </li>
+            <li class="py-1 px-2">
+              <a
+                href="#"
+                class="uppercase hover:text-primaryred font-medium text-neutraldarkblue text-xs"
+                >Contact</a
+              >
+            </li>
+            <li
+              class="bg-primaryred hover:border hover:border-primaryred hover:bg-white py-1 px-4 rounded shadow-md"
+            >
+              <a
+                href="#"
+                class="uppercase text-white hover:text-primaryred font-medium text-xs"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero section -->
+      <section class="flex py-8">
+        <div>
+          <div>
+            <h1>
+              A simple Bookmark<br />
+              Manager
+            </h1>
+            <p>
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div>
+              <button class="bg-primaryblue">Get it on Chrome</button>
+              <button class="bg-gray-100 shadow-md">Get it on Firefox</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full">
+          <div
+            class="absolute h-40 rounded-full w-1/2 r-0 b-0 bg-primaryblue"
+          ></div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt="Hero Image"
+            class="relative z-2"
+          />
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section>
+        <div>
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>Simple Bookmarking</li>
+            <li>Speedy Searching</li>
+            <li>Easy Sharing</li>
+          </ul>
+          <div>
+            <div
+            class="absolute h-40 rounded-full w-1/2 r-0 b-0 bg-primaryblue"
+          ></div>
+            <div>
+              <img src="./images/illustration-features-tab-1.svg" alt="Tab1" />
+            </div>
+            <div>
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button class="bg-primaryblue text-white">More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section>
+        <div>
+          <h2>Download the extension</h2>
+          <p>
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
+        </div>
+        <!-- Cards container -->
+        <div>
+          <!-- /Cards -->
+          <div>
+            <div>
+              <img src="./images/logo-chrome.svg" alt="Chrome Logo" />
+            </div>
+            <div>
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+            </div>
+            <div>
+              <button class="bg-primaryblue text-white">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="./images/logo-firefox.svg" alt="Chrome Logo" />
+            </div>
+            <div>
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+            </div>
+            <div>
+              <button class="bg-primaryblue text-white">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="./images/logo-opera.svg" alt="Chrome Logo" />
+            </div>
+            <div>
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+            </div>
+            <div>
+              <button class="bg-primaryblue text-white">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+       <section>
+        <div>
+          <h2>
+            Frequently Asked Questions
+          </h2>
+          <p>
+            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+          </p>
+        </div>
+        <div>
+          <div>
+            <h3>What is Bookmark?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </p>
+          </div>
+          <div>
+            <h3>How can I request a new browser?</h3>
+            <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </p>
+          </div>
+          <div>
+            <h3>Is there a mobile app?</h3>
+            <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+            </p>
+          </div>
+          <div>
+            <h3>What about other Chromium browsers?</h3>
+            <p>
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+            </p>
+          </div>
+        </div>
+        <div>
+          <button class="bg-primaryblue text-white">More Info</button>
+        </div>
+       </section>
+
+      <!-- Contact Section -->
+       <section class="bg-primaryblue p-4">
+        <div>
+          <p>
+            35,000+ already joined
+          </p>
+          <h3>
+            Stay up-to-date with what we're doing
+          </h3>
+          <div>
+            <input type="text">
+            <button class="bg-primaryred text-white">Contact Us</button>
+          </div>
+        </div>
+       </section>
+
+      <!-- Footer -->
+
+      <footer class="bg-neutraldarkblue">
+        <nav>
+          <div>
+            <img src="./images/logo-bookmark.svg" alt="Logo">
+          </div>
+          <ul>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="Twitter">
+            </a>
+          </li>
+        </ul>
+      </footer>
+
+    </main>
+
+    <!-- Features Pricing Contact Login A Simple Bookmark Manager A clean and simple
+    interface to organize your favourite websites. Open a new browser tab and
+    see your sites load instantly. Try it for free. Get it on Chrome Get it on
+    Firefox Features Our aim is to make it quick and easy for you to access your
+    favourite websites. Your bookmarks sync between your devices so you can
+    access them on the go. Simple Bookmarking Speedy Searching Easy Sharing
+    Bookmark in one click Organize your bookmarks however you like. Our simple
+    drag-and-drop interface gives you complete control over how you manage your
+    favourite sites. More Info Intelligent search Our powerful search feature
+    will help you find saved sites in no time at all. No need to trawl through
+    all of your bookmarks. More Info Share your bookmarks Easily share your
+    bookmarks and collections with others. Create a shareable link that you can
+    send at the click of a button. More Info Download the extension We’ve got
+    more browsers in the pipeline. Please do let us know if you’ve got a
+    favourite you’d like us to prioritize. Add to Chrome Minimum version 62 Add
+    & Install Extension Add to Firefox Minimum version 55 Add & Install
+    Extension Add to Opera Minimum version 46 Add & Install Extension Frequently
+    Asked Questions Here are some of our FAQs. If you have any other questions
+    you’d like answered please feel free to email us. -->
+
+    <!-- Question 1 -->
+    <!-- What is Bookmark? -->
+
+    <!-- Answer 1 -->
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
+    mattis. -->
+
+    <!-- Question 2 -->
+    <!-- How can I request a new browser? -->
+
+    <!-- Answer 2 -->
+    <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+    convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+    imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+    massa, ultricies non ligula. Suspendisse imperdiet. -->
+
+    <!-- Question 3 -->
+    <!-- Is there a mobile app? -->
+
+    <!-- Answer 3 -->
+    <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+    dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
+    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum. -->
+
+    <!-- Question 4 -->
+    <!-- What about other Chromium browsers? -->
+
+    <!-- Answer 4 -->
+    <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
+    euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
+    velit. More Info 35,000+ already joined Stay up-to-date with what we’re
+    doing Contact Us Features Pricing Contact -->
+  </body>
+</html>
