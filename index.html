@@ -300,45 +300,141 @@
       </section> -->
 
       <!-- FAQ Section -->
-      <!-- <section>
-        <div>
-          <h2>
-            Frequently Asked Questions
-          </h2>
-          <p>
-            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+      <section>
+        <div class="text-center mb-4">
+          <h2 class="text-xl font-medium">Frequently Asked Questions</h2>
+          <p
+            class="text-neutralgrayblue leading-normal tracking-wide mt-4 lg:w-1/2 mx-auto"
+          >
+            Here are some of our FAQs. If you have any other questions you'd
+            like answered please feel free to email us.
           </p>
         </div>
-        <div>
-          <div>
-            <h3>What is Bookmark?</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        <!-- FAQ container -->
+        <div class="lg:w-1/2 mx-auto border-t-2">
+          <!-- FAQ1 -->
+          <div
+          class="faq-item border-b-2"
+          onclick="toggleAnswer(this)"
+          >
+            <div
+              class="cursor-pointer flex justify-between items-center py-4 px-2 group"
+            >
+              <h3
+                class="faq-question group-hover:text-primaryred transition-all duration-300"
+              >
+                What is Bookmark?
+              </h3>
+              <svg
+                class="open group-hover:stroke-primaryred stroke-primaryblue transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path fill="none" stroke="" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
+            </div>
+            <p class="faq-answer hidden px-2 py-2 leading-7 text-neutraldarkblue">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
+              quis quam ornare mattis.
             </p>
           </div>
-          <div>
-            <h3>How can I request a new browser?</h3>
-            <p>
-              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+
+          <!-- FAQ2 -->
+          <div class="faq-item border-b-2"
+          onclick="toggleAnswer(this)"
+          >
+            <div
+              class="cursor-pointer flex justify-between items-center py-4 px-2 group"
+            >
+              <h3
+                class="faq-question group-hover:text-primaryred transition-all duration-300"
+              >
+                How can I request a new browser?
+              </h3>
+              <svg
+                class="open group-hover:stroke-primaryred stroke-primaryblue transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path fill="none" stroke="" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
+            </div>
+            <p class="faq-answer hidden px-2 py-2 leading-7 text-neutraldarkblue">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+              massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
+              eros aliquet convallis ultricies. Mauris augue massa, ultricies
+              non ligula. Suspendisse imperdie tVivamus luctus eros aliquet
+              convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet.
             </p>
           </div>
-          <div>
-            <h3>Is there a mobile app?</h3>
-            <p>
-              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+
+          <!-- FAQ3 -->
+          <div class="faq-item border-b-2"
+          onclick="toggleAnswer(this)"
+          >
+            <div
+              class="cursor-pointer flex justify-between items-center py-4 px-2 group"
+            >
+              <h3
+                class="faq-question group-hover:text-primaryred transition-all duration-300"
+              >
+                Is there a mobile app?
+              </h3>
+              <svg
+                class="open group-hover:stroke-primaryred stroke-primaryblue transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path fill="none" stroke="" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
+            </div>
+            <p class="faq-answer hidden px-2 py-2 leading-7 text-neutraldarkblue">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum urna vulputate eget. Cras in
+              ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
             </p>
           </div>
-          <div>
-            <h3>What about other Chromium browsers?</h3>
-            <p>
-              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.
+
+          <!-- FAQ4 -->
+          <div class="faq-item border-b-2"
+          onclick="toggleAnswer(this)"
+          >
+            <div
+              class="cursor-pointer flex justify-between items-center py-4 px-2 group"
+            >
+              <h3
+                class="faq-question group-hover:text-primaryred transition-all duration-300"
+              >
+                What about other Chromium browsers?
+              </h3>
+              <svg
+                class="open group-hover:stroke-primaryred stroke-primaryblue transition-all duration-300"
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="12"
+              >
+                <path fill="none" stroke="" stroke-width="3" d="M1 1l8 8 8-8" />
+              </svg>
+            </div>
+            <p class="faq-answer hidden px-2 py-2 leading-7 text-neutraldarkblue">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in
+              placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
+              pellentesque non ut velit.
             </p>
           </div>
         </div>
-        <div>
-          <button class="bg-primaryblue text-white">More Info</button>
+        <div class="text-center mt-8">
+          <button class="bg-primaryblue text-white px-4 py-2 rounded">
+            More Info
+          </button>
         </div>
-       </section> -->
+      </section>
 
       <!-- Contact Section -->
       <!-- <section class="bg-primaryblue p-4">

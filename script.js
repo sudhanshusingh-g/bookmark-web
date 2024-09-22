@@ -1,7 +1,7 @@
 const menuButton=document.getElementById("menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeMenu = document.getElementById("close");
-
+const faqAnswer = document.querySelector(".faq-answer");
 // Select all the tabs
 const tabs = document.querySelectorAll(".feature-tab");
 
@@ -68,3 +68,19 @@ menuButton.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
+
+function toggleAnswer(faqItem) {
+  const faqAnswer = faqItem.querySelector(".faq-answer");
+  const svgIcon = faqItem.querySelector("svg");
+  const faqQuestion = faqItem.querySelector(".faq-question");
+
+  // Toggle the hidden class on the answer to show or hide it
+  faqAnswer.classList.toggle("hidden");
+
+  // Toggle the arrow direction by adding/removing a rotate class
+  svgIcon.classList.toggle("rotate-180");
+
+  // Toggle the color of the arrow and the question text
+  // faqQuestion.classList.toggle("text-primaryred");
+  svgIcon.classList.toggle("stroke-primaryred");
+}
