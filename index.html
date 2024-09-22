@@ -36,22 +36,32 @@
           <div class="md:hidden cursor-pointer" id="menu">
             <img src="./images/icon-hamburger.svg" alt="Menu" />
           </div>
-          <ul class="space-x-2 hidden md:flex items-center">
+          <ul class="space-x-8 hidden md:flex items-center">
             <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li
-              class="bg-primaryred border hover:border hover:border-primaryred hover:bg-white py-1 px-4 rounded shadow-md"
-            >
               <a
                 href="#"
-                class="uppercase text-white hover:text-primaryred font-medium text-xs"
+                class="uppercase text-xs hover:text-primaryred transition-all duration-300 tracking-wider"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="uppercase text-xs hover:text-primaryred transition-all duration-300 tracking-wider"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="uppercase text-xs hover:text-primaryred transition-all duration-300 tracking-wider"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="uppercase text-white font-medium text-xs bg-primaryred px-4 py-2 shadow-md rounded border hover:border-primaryred hover:text-primaryred hover:bg-white transition-all duration-300"
                 >Login</a
               >
             </li>
@@ -86,13 +96,13 @@
               </div>
             </div>
             <ul class="flex flex-col">
-              <li class="border-t-[1px] border-b-[1px] p-4 text-center">
+              <li class="border-b-[1px] p-4 text-center">
                 <a href="#" class="text-white uppercase text-xl">Features</a>
               </li>
-              <li class="border-t-[1px] border-b-[1px] p-4 text-center">
+              <li class="border-b-[1px] p-4 text-center">
                 <a href="#" class="text-white uppercase text-xl">Pricing</a>
               </li>
-              <li class="border-t-[1px] border-b-[1px] p-4 text-center">
+              <li class="border-b-[1px] p-4 text-center">
                 <a href="#" class="text-white uppercase text-xl">Contact</a>
               </li>
               <li class="p-4 text-center">
@@ -165,6 +175,72 @@
       </section>
 
       <!-- Features section -->
+      <section>
+        <!-- Feature title and description -->
+        <div class="text-center mb-4">
+          <h2 class="text-xl font-medium">Features</h2>
+          <p
+            class="text-neutralgrayblue leading-normal tracking-wide mt-4 lg:w-1/2 mx-auto"
+          >
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+
+        <!-- Feature tabs title -->
+        <div
+          class="flex items-center justify-center flex-col md:flex-row md:gap-0 gap-4"
+        >
+          <button
+            class="px-4 py-2 feature-tab text-primaryred after:bg-primaryred after:h-1 after:w-full after:block after:relative after:-bottom-2 border-b-[1px] transition-all duration-300"
+            data-tab="1"
+          >
+            Simple Bookmarking
+          </button>
+          <button
+            class="px-4 py-2 feature-tab text-neutralgrayblue after:bg-primaryred after:h-1 after:w-full after:block after:relative after:-bottom-2 border-b-[1px] after:opacity-0 hover:text-primaryred transition-all duration-300"
+            data-tab="2"
+          >
+            Speedy Searching
+          </button>
+          <button
+            class="px-4 py-2 feature-tab text-neutralgrayblue after:bg-primaryred after:h-1 after:w-full after:block after:relative after:-bottom-2 border-b-[1px] after:opacity-0 hover:text-primaryred transition-all duration-300"
+            data-tab="3"
+          >
+            Easy Sharing
+          </button>
+        </div>
+
+        <!-- Feature tabs content -->
+        <div class="my-16 overflow-hidden flex flex-col md:flex-row">
+          <!-- Feature Content Container -->
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-24"
+          >
+            <!-- Feature Image -->
+            <div id="feature-image" class="md:w-[46%]">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="Tab1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- Feature Text Content -->
+            <div id="feature-content" class="flex-1 flex flex-col gap-4">
+              <h3 class="text-2xl font-semibold">Bookmark in one click</h3>
+              <p class="text-neutralgrayblue">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button class="w-fit bg-primaryblue px-4 py-2 text-white rounded">
+                More info
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Download Section -->
       <!-- <section>
@@ -314,19 +390,7 @@
       </footer> -->
     </main>
 
-    <!-- Features Pricing Contact Login A Simple Bookmark Manager A clean and simple
-    interface to organize your favourite websites. Open a new browser tab and
-    see your sites load instantly. Try it for free. Get it on Chrome Get it on
-    Firefox Features Our aim is to make it quick and easy for you to access your
-    favourite websites. Your bookmarks sync between your devices so you can
-    access them on the go. Simple Bookmarking Speedy Searching Easy Sharing
-    Bookmark in one click Organize your bookmarks however you like. Our simple
-    drag-and-drop interface gives you complete control over how you manage your
-    favourite sites. More Info Intelligent search Our powerful search feature
-    will help you find saved sites in no time at all. No need to trawl through
-    all of your bookmarks. More Info Share your bookmarks Easily share your
-    bookmarks and collections with others. Create a shareable link that you can
-    send at the click of a button. More Info Download the extension We’ve got
+    <!-- Download the extension We’ve got
     more browsers in the pipeline. Please do let us know if you’ve got a
     favourite you’d like us to prioritize. Add to Chrome Minimum version 62 Add
     & Install Extension Add to Firefox Minimum version 55 Add & Install
