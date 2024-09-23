@@ -40,13 +40,13 @@ function updateContent(tabNumber) {
 
   // Remove active-tab class from all tabs and add to the clicked one
   tabs.forEach((tab) => {
-    tab.classList.remove("text-primaryred", "after:opacity-100");
+    tab.classList.remove("text-neutraldarkblue", "after:opacity-100");
     tab.classList.add("text-neutralgrayblue", "after:opacity-0");
   });
 
   const activeTab = document.querySelector(`.feature-tab[data-tab="${tabNumber}"]`);
   activeTab.classList.remove("text-neutralgrayblue", "after:opacity-0");
-  activeTab.classList.add("text-primaryred", "after:opacity-100");
+  activeTab.classList.add("text-neutraldarkblue", "after:opacity-100");
 }
 
 // Add click event to all tabs
@@ -62,11 +62,13 @@ tabs.forEach((tab) => {
 // Add click event to the menu button
 menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
+  document.body.classList.add("no-scroll");
 });
 
 // Add click event to the close button
 closeMenu.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+    document.body.classList.remove("no-scroll");
 });
 
 function toggleAnswer(faqItem) {
